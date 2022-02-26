@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Quicksand:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    display: grid;
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+}
+
+nav,
+footer {
+    background-color: #1B1B1B;
+}
+
+nav .container {
+    display: grid;
+    margin-top: 1rem;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+
+}
+
+nav .logo {
+    font-family: 'Barriecito', cursive;
+    font-size: 2.3rem;
+    color: #FF9318;
+    margin: 0;
+    justify-self: start;
+}
+
+
+nav .button {
+    justify-self: end;
+}
+
+nav .main-nav {
+    padding: 0;
+    list-style: none;
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: .75rem;
+}
+
+
+p {
+    line-height: 1.6;
+}
+
+.container,
+footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#comedians img {
+    width: 65%;
+}
+
+#comedians .card {
+    margin-top: 4.5rem;
+}
+
+.button {
+    color: #fff;
+    text-decoration: none;
+    background-color: #FF9318;
+    padding: 1rem;
+    margin: 0;
+    border-radius: 1rem;
+}
+
+.intro {
+    color: #000;
+    background-color: #FF9318;
+}
+
+#comedians,
+#offers {
+    background-color: #2F2F2F;
+    padding: 3rem 0;
+}
+
+#offers .card {
+    padding-top: 4rem;
+}
+
+#offers .icon {
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+#offers .button {
+    display: inline-block;
+    width: 50%;
+    margin: 3rem;
+}
+
+#offers h4 {
+    font-size: 1.5rem;
+}
+
+.title {
+    color: #FF9318;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+#welcome {
+    background-color: #242424;
+    padding: 3rem 0;
+}
+
+@media screen and (min-width: 768px) {
+    nav .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: none;
+        margin: 0;
+    }
+
+    nav .logo {
+        align-self: center;
+    }
+
+    nav li a {
+        padding: 1rem;
+    }
+
+    nav li a:hover {
+        text-decoration: underline;
+    }
+
+    nav .main-nav {
+        grid-area: 1 / 2 / 2 / 3;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+    }
+
+    nav .button {
+        grid-area: 1 / 3 / 2 / 4;
+        align-self: center;
+    }
+
+    .button:hover {
+        background-color: white;
+        color: #FF9318;
+    }
+
+    #comedians .wrapper {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    #comedians img {
+        width: 75%;
+    }
+
+    #offers .container {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #offers .card {
+        padding: 2rem;
+        background-color: #000;
+        border-radius: 1.5rem;
+        box-shadow: .5rem .5rem .875rem #FF9318;
+    }
+
+    #offers .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.8rem;
+    }
+
+    #offers .icon {
+        padding: 2rem
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer .contact {
+        display: flex;
+    }
+    
+    footer .contact p {
+        padding: 0 1rem;
+        border-left: 1px solid  #fff;
+        border-right: 1px solid  #fff;
+    }
+}
